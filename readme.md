@@ -29,6 +29,11 @@ bash scripts/install_ext.sh
 
 Simply use the model arguments to train on the selected strategy w/o mapped thermal values. For example, for Lion:
 
+Map the thermal images to corresponding thermal arrays:
+```bash
+python img_temp_map.py --path ./dataset/lion --object lion
+```
+
 Training from Scratch (TS):
 ```bash
 python main.py ./dataset/lion --workspace lion_ts --ts --val_idx 20  --tv 48.3 --tv_min 16.8
